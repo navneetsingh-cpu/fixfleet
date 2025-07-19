@@ -45,7 +45,7 @@ export const RentalCarSearchForm: FC<Props> = ({ className, formStyle = 'default
         className,
         formStyle === 'small' && 'rounded-t-2xl rounded-b-4xl custom-shadow-1',
         formStyle === 'default' &&
-          'rounded-t-2xl rounded-b-[40px] shadow-xl xl:rounded-t-3xl xl:rounded-b-[48px] dark:shadow-2xl'
+        'rounded-t-2xl rounded-b-[40px] shadow-xl xl:rounded-t-3xl xl:rounded-b-[48px] dark:shadow-2xl'
       )}
       action={handleFormSubmit}
     >
@@ -88,8 +88,8 @@ export const RentalCarSearchForm: FC<Props> = ({ className, formStyle = 'default
           <>
             <VerticalDividerLine />
             <LocationInputField
-              placeholder={T['HeroSearchForm']['City or Airport']}
-              description={T['HeroSearchForm']['Drop off location']}
+              placeholder={T['HeroSearchForm']['Service Type']}
+              description={T['HeroSearchForm']['Oil Change']}
               className="hero-search-form__field-before hero-search-form__field-after flex-1"
               inputName="dropoff-location"
               fieldStyle={formStyle}

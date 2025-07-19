@@ -37,7 +37,7 @@ async function PageHome() {
           description={
             <>
               <p className="max-w-xl text-base text-neutral-500 sm:text-xl dark:text-neutral-400">
-                Discover of car fixes tailored to your needs.
+                Discover car fixes tailored to your needs.
               </p>
               <ButtonPrimary href={'/car-categories/all'} className="sm:text-base/normal">
                 Start your search

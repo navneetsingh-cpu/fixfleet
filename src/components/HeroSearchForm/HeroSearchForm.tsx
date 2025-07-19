@@ -41,10 +41,12 @@ const HeroSearchForm = ({ className, initTab = 'Stays' }: { className?: string; 
                 key={tab.name}
                 as={Link}
                 href={tab.href}
-                className="group/tab flex shrink-0 cursor-pointer items-center text-sm font-medium text-neutral-500 hover:text-neutral-700 focus-visible:outline-hidden data-selected:text-neutral-950 lg:text-base dark:hover:text-neutral-400 dark:data-selected:text-neutral-100"
+                // className="group/tab flex shrink-0 cursor-pointer items-center text-sm font-medium text-neutral-500 hover:text-neutral-700 focus-visible:outline-hidden data-selected:text-neutral-950 lg:text-base dark:hover:text-neutral-400 dark:data-selected:text-neutral-100"
               >
                 <div className="me-1.5 hidden size-2.5 rounded-full bg-neutral-950 group-data-selected/tab:block xl:me-2 dark:bg-neutral-100" />
-                <span>{tab.name}</span>
+                {/* <span>{tab.name}</span> */}
+                <span> </span>
+
               </Headless.Tab>
             )
           })}

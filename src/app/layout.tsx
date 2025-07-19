@@ -13,8 +13,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - Chisfis',
-    default: 'Chisfis - Booking online React Next.js template',
+    template: '%s - FixFleet',
+    default: 'FixFleet - Mechani Booking online',
   },
   description: 'Booking online & rental online Next.js Template',
   keywords: ['Chisfis', 'Booking online', 'Rental online', 'React Next.js template'],
