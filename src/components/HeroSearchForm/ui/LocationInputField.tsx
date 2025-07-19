@@ -6,12 +6,13 @@ import T from '@/utils/getT'
 import * as Headless from '@headlessui/react'
 import { MapPinIcon } from '@heroicons/react/24/outline'
 import {
-  BeachIcon,
-  EiffelTowerIcon,
-  HutIcon,
-  LakeIcon,
+  TowTruckIcon,
+  OilBarrelIcon,
+  TireIcon,
+  SecurityCheckIcon,
   Location01Icon,
-  TwinTowerIcon,
+  DashboardSpeed01Icon,
+  RainIcon,
 } from '@hugeicons/core-free-icons'
 import { HugeiconsIcon, IconSvgElement } from '@hugeicons/react'
 import clsx from 'clsx'
@@ -28,51 +29,60 @@ type Suggest = {
 const demoInitSuggests: Suggest[] = [
   {
     id: '1',
-    name: 'Bangkok, Thailand',
-    icon: HutIcon,
+    name: 'Seasonal Tire Change',
+    icon: TireIcon,
   },
   {
     id: '2',
-    name: 'Ueno, Taito, Tokyo',
-    icon: EiffelTowerIcon,
+    name: 'Maintenance / Oil Change',
+    icon: OilBarrelIcon,
   },
   {
     id: '3',
-    name: 'Ikebukuro, Toshima, Tokyo',
-    icon: TwinTowerIcon,
+    name: 'Windsheld Replacement',
+    icon: DashboardSpeed01Icon,
   },
   {
     id: '4',
-    name: 'San Diego, CA',
-    icon: BeachIcon,
+    name: 'Car Towing',
+    icon: TowTruckIcon,
   },
   {
     id: '5',
-    name: 'Humboldt Park, Chicago, IL',
-    icon: LakeIcon,
+    name: 'Car Diagnostics',
+    icon: SecurityCheckIcon,
+  },
+  {
+    id: '6',
+    name: 'Wiper Blade Replacement',
+    icon: RainIcon,
   },
 ]
 
 const demoSearchingSuggests: Suggest[] = [
   {
     id: '1',
-    name: 'San Diego, CA',
+    name: 'Seasonal Tire Change',
   },
   {
     id: '2',
-    name: 'Humboldt Park, Chicago, IL',
+    name: 'Maintenance / Oil Change',
   },
   {
     id: '3',
-    name: 'Bangor, Northern Ireland',
+    name: 'Windsheld Replacement',
   },
   {
     id: '4',
-    name: 'New York, NY, United States',
+    name: 'Car Towing',
   },
   {
     id: '5',
-    name: 'Los Angeles, CA, United States',
+    name: 'Car Diagnostics',
+  },
+  {
+    id: '6',
+    name: 'Wiper Blade Replacement',
   },
 ]
 
@@ -219,7 +229,7 @@ export const LocationInputField: FC<Props> = ({
           <div className={clsx(styles.panel.base, styles.panel[fieldStyle])}>
             {isShowInitSuggests && (
               <p className="mt-2 mb-3 px-4 text-xs/6 font-normal text-neutral-600 sm:mt-0 sm:px-8 dark:text-neutral-400">
-                {T['HeroSearchForm']['Suggested locations']}
+                {T['HeroSearchForm']['Suggested services']}
               </p>
             )}
             {isShowInitSuggests && <Divider className="opacity-50" />}

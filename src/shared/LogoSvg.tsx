@@ -8,7 +8,7 @@ const LogoSvg = () => {
         </linearGradient>
       </defs>
 
-      <g font-family="Segoe UI, sans-serif" font-weight="bold" font-size="28">
+      <g fontFamily="Segoe UI, sans-serif" font-weight="bold" font-size="28">
         <text x="5" y="38" fill="url(#grad)">Fix</text>
         <text x="50" y="38" fill="currentColor">Fleet</text>
       </g>
